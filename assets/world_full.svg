@@ -1,0 +1,25 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 800 400"
+    style="background-color:#dfeee8">
+
+    <!-- USA -->
+    <path id="US"
+          d="M100 150 L200 150 L220 170 L210 190 L120 190 Z"
+          fill="#cfd8dc" stroke="#455a64" stroke-width="1"/>
+          
+    <!-- Türkiye -->
+    <path id="TR"
+          d="M400 170 L460 170 L480 180 L470 190 L400 190 Z"
+          fill="#cfd8dc" stroke="#455a64" stroke-width="1"/>
+
+    <!-- Japan -->
+    <path id="JP"
+          d="M600 150 L610 160 L605 170 L615 180 L610 190 L600 185 Z"
+          fill="#cfd8dc" stroke="#455a64" stroke-width="1"/>
+
+    <!-- just for visual reference, a title -->
+    <text x="20" y="30" font-size="18" fill="#455a64" font-family="sans-serif">
+        Demo World Map (tap a country)
+    </text>
+</svg>
