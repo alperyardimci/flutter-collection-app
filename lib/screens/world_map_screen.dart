@@ -121,7 +121,11 @@ class _WorldMapScreenState extends State<WorldMapScreen> {
         countryCode: c.isoCode,
         countryName: c.name,
       ),
-    ).then((_) => setState(() {}));
+    ).then((result) {
+      // Recompute image presence/counts after returning from country details
+      // (e.g., when a banknote was added/edited). _computeHasImages calls setState.
+      _computeHasImages();
+    });
   }
 
   @override
