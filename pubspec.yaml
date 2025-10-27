@@ -66,6 +66,7 @@ flutter:
   assets:
     - assets/world_full.svg
     - assets/countries.json
+    - assets/logo.svg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
