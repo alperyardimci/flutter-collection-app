@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:flutter/foundation.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'banknote_entry.dart';
 
@@ -61,7 +62,8 @@ class BanknoteStore {
           }
         } catch (e) {
           // Log error but proceed with Hive deletion
-          print('Error deleting image file: $e');
+          // use debugPrint to avoid lint warnings
+          debugPrint('Error deleting image file: $e');
         }
         await _box.delete(keys[i]);
         return;

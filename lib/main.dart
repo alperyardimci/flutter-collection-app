@@ -20,10 +20,21 @@ class BanknoteApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'My Banknotes',
+      title: 'Collector',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         useMaterial3: true,
+        scaffoldBackgroundColor: const Color(0xFF0B1220),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xFF0B1220),
+          foregroundColor: Colors.white,
+          elevation: 0,
+        ),
+        floatingActionButtonTheme: const FloatingActionButtonThemeData(
+          backgroundColor: Color(0xFF1A2438),
+          foregroundColor: Colors.white,
+        ),
       ),
       initialRoute: WorldMapScreen.routeName,
       routes: {

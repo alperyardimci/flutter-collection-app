@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 /// Represents a country's display information and metadata
@@ -52,10 +53,11 @@ class Countries {
       }
       all = map;
     } catch (e) {
-      // If loading fails, keep the small fallback map and print error.
+      // If loading fails, keep the small fallback map and log the error.
       // The app will continue to function.
+      // Use debugPrint to avoid lint warnings
       // ignore: avoid_print
-      print('Failed to load countries.json: $e');
+      debugPrint('Failed to load countries.json: $e');
     }
   }
 
